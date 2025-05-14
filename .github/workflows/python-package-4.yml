@@ -4,9 +4,8 @@ name: Python Package
 
 on:
   push:
-    branches: ["master"]
-  pull_request:
-    branches: ["master"]
+    branches:
+      - '**'  # This matches all branches
 
 env:
   FORCE_COLOR: "1"  # Make tools pretty.
