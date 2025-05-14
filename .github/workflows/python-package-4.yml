@@ -56,8 +56,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements-dev.txt
           pip install tox-gh-actions
-      - name: Pylint
-        run: pylint --recursive=y --errors-only --exit-zero kafka test
       - name: Setup java
         uses: actions/setup-java@v4
         with:
